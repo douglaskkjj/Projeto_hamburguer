@@ -139,4 +139,71 @@ nav img{
     background-color: white;
 }
 
+.tituloS{
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+    display: block;
+}
 
+.hamb,
+.mundi,
+.dog{
+    display: flex;
+    gap: 5rem;
+    padding: 20px;
+    margin: 40px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+
+.itens{
+    background-color: #b0c5ba;
+    width: 180px;
+    height: 275px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #000000;
+}
+
+.itens img{
+    width: 180px;
+    height: 120px;
+    border-radius: 7px;
+}
+
+.itens section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+    padding: 5px;
+    
+}
+
+.itens h1{
+    font-size: 1rem;
+}
+
+.itens h2{
+    font-size: .9rem;
+    color: rgb(17, 4, 4);
+}
+
+.itens button{
+    background-color: rgb(255, 29, 29);
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #efeded;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
