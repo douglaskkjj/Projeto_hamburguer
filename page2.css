@@ -78,7 +78,7 @@ a{
     font-family: 'Kavoon', sans-serif;
 }
 
-.acai, .choco{
+.acai, .choco, .batata{
     display: flex;
     gap: 3rem;
     padding: 20px;
