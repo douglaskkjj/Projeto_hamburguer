@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mundial Burger"/>
     <meta name="description" content="Cardápio simples"/>
-    <title>Mundial Burguer</title>
+    <title>Mundial Burguer - Menu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slide.css">
     <link rel="shortcut icon" href="img/MUNDIAL BURGUER.ico" type="image/x-icon">
     
 
@@ -17,10 +16,12 @@
     <header>       
         <nav>
             <a href="#"><img src="img/MUNDIAL BURGUER.png" alt=""></a>
-            <ul>
+            <ul class="main-menu">
                 <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Sobremesa</a></li>
+                <li><a href="page2.html">Sobremesa</a></li>
+                <li><a href="#">Porções</a></li>
                 <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -60,142 +61,232 @@
             <label for="radio3" class="manual-btn"></label>
         </article>
     </section>
+    <script src="script.js"></script>
+            <!--Fim do Slide-->
 
     <h1 class="tituloS">Tradicional</h1>
 
    <section class="hamb">
       <article class="itens">
-         <img src="cheeseburguer.jpeg">
+         <img src="img/classic_burger/cheeseburger.jpeg">
          <section>
             <h1>Cheeseburguer</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão brioche, carne 130g, queijo cheddar, picles e molho especial</h2>
+            <span class="preco">R$ 25,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="cheeseburger_bacon.jpeg">
+         <img src="img/classic_burger/cheeseburger_bacon.jpeg">
          <section>
-            <h1>X-Bacon</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h1>Cheeseburger Bacon</h1>
+            <h2>Pão brioche, carne 130g, queijo cheddar, maionese verde e bacon</h2>
+            <span class="preco">R$ 28,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="duplo_bacon_egg.jpg">
+         <img src="img/classic_burger/duplo_bacon_egg.jpg">
          <section>
             <h1>Duplo Bacon Egg</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão brioche, 2 carnes 130g, queijo cheddar, bacon, ovo e maionese verde</h2>
+            <span class="preco">R$ 37,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="cheeseburger_calabresa.jpg">
+         <img src="img/classic_burger/cheeseburger_calabresa.jpeg">
          <section>
-            <h1>X-Calabresa</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h1>Cheeseburguer Calabresa</h1>
+            <h2>Pão brioche, carne 130g, calabresa, queijo cheddar e muita maionese verde</h2>
+            <span class="preco">R$ 40,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="cheeseburger_salada.jpg">
+         <img src="img/classic_burger/cheeseburger_salada.jpeg">
          <section>
-            <h1>X-Salada</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h1>Cheeseburguer Salada</h1>
+            <h2>Pão brioche,carne 130g, alface América, tomate , queijo cheddar e maionese verde.</h2>
+            <span class="preco">R$ 27,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
    </section>
 
-   <h1 class="tituloS">Linha Mundi</h1>
+                <!--Linha Mundial-->
+
+   <h1 class="tituloS">Linha Mundial</h1>
 
    <section class="mundi">
       <article class="itens">
-         <img src="american.jpeg">
+         <img src="img/linha_mund/american.jpeg">
          <section>
             <h1>American Burguer</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão brioche, carne 130g queijo cheddar, bacon, anel de cebola e molho barbecue Original.</h2>
+            <span class="preco">R$ 37,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="brazilian_b.jpg">
+         <img src="img/linha_mund/brazilian_b.jpg">
          <section>
             <h1>Brazilian Burguer</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão brioche, carne 130g, queijo cheddar, anel de cebola envolvido com bacon e molho cheddar.</h2>
+            <span class="preco">R$ 42,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="tri_mund.jpg">
+         <img src="img/linha_mund/tri_mund.jpg">
          <section>
             <h1>Tri Mundial</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>São 300g de carne,muito queijo mussarela, muito queijo cheddar e  cebola caramelizada</h2>
+            <span class="preco">R$ 47,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="doritos.jpeg">
+         <img src="img/linha_mund/doritos.jpeg">
          <section>
             <h1>Doritos Mundial</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão brioche, carne 130g, bacon fatiado, muito cheddar e claro nosso Doritos</h2>
+            <span class="preco">R$ 43,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
    </section>
 
+            <!--HOT-DOG-->
   
-   <h1 class="tituloS">Dogs</h1>
+   <h1 class="tituloS">Hot-Dogs</h1>
 
    <section class="dog">
       <article class="itens">
-         <img src="202509171856_J0R5_i.avif">
+         <img src="img/hot-dog/hotdog.jpg">
          <section>
             <h1>Dog Bacon Prensado</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pão 21cm, 2 salsicha, bacon,molho vermelho, maionese caseira, ketchup, milho, ervilha e batata palha</h2>
+            <span class="preco">R$ 28,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="202509171856_J0R5_i.avif">
+         <img src="img/hot-dog/hotdog.jpg">
          <section>
             <h1>Dog Trad. Prensado</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h2>Pao 21cm, 2 salsicha, molho vermelho, maionese caseira,ketchup, milho, ervilha, queijo ralado e batata palha</h2>
+            <span class="preco">R$ 26,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
 
       <article class="itens">
-         <img src="">
+         <img src="img/hot-dog/hotdog.jpg">
          <section>
-            <h1> Dog American Prensado</h1>
-            <h2>descriçao</h2>
-            <span>10</span>
+            <h1>Dog American Prensado</h1>
+            <h2>Pao 21cm, 2 salsicha, anel de cebola, bacon, maionese verde, barbecue, milho, ervilha e batata palha</h2>
+            <span class="preco">R$ 32,90</span>
             <button>Saiba mais</button>
          </section>
       </article>
    </section>
 
-    <script src="script.js"></script>
-            <!--Fim do Slide-->
+   <!--Bebidas-->
+
+   <h1 class="tituloS">Bebidas</h1>
+
+   <section class="drink">
+      <article class="itens">
+         <img src="img/bebidas/agua.jpeg">
+         <section>
+            <h1>Água Mineral sem Gás Armazem Garrafa 510ml </h1>
+            <h2>Água mineral pura, sem gás, da fonte direto para sua <br>mesa.</h2>
+            <span class="preco">R$ 3,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+      <article class="itens">
+         <img src="img/bebidas/aguaGas.jpg">
+         <section>
+            <h1>Água Mineral com Gás Armazém 510ml</h1>
+            <h2>Refresque-se com nossa Água Mineral com Gás Armazém 510ml.</h2>
+            <span class="preco">R$ 4,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+        <article class="itens">
+         <img src="img/bebidas/coca.jpg">
+         <section>
+            <h1>Coca-Cola Lata 350ml</h1>
+            <h2>Refresque-se com a clássica Coca-Cola gelada em lata de 350ml.</h2>
+            <span class="preco">R$ 7,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+        <article class="itens">
+         <img src="img/bebidas/cocaZero.jpg">
+         <section>
+            <h1>Coca-Cola Zero Lata 350ml</h1>
+            <h2>Refresque-se com a deliciosa Coca Cola Zero, sem adição de açúca.</h2>
+            <span class="preco">R$ 7,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+        <article class="itens">
+         <img src="img/bebidas/guarana.jpg">
+         <section>
+            <h1>Guaraná Antarctica Lata 350ml</h1>
+            <h2>Refrescante e delicioso Guaraná Antarctica, tradicional sabor brasileiro.</h2>
+            <span class="preco">R$ 7,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+        <article class="itens">
+         <img src="img/bebidas/coca600.jpg">
+         <section>
+            <h1>Coca-Cola 600ml </h1>
+            <h2>Refrigerante refrescante e clássico, perfeito para acompanhar suas refeições</h2>
+            <span class="preco">R$ 11,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+      <article class="itens">
+         <img src="img/bebidas/coca600_zero.jpg">
+         <section>
+            <h1>Coca-Cola Zero 600ml</h1>
+            <h2>Refresque-se com a nossa Coca-Cola Zero 600ml.</h2>
+            <span class="preco">R$ 11,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+
+      <article class="itens">
+         <img src="img/bebidas/guarana600.jpg">
+         <section>
+            <h1>Guaraná Antarctica 600ml</h1>
+            <h2>Refresque-se com nosso Guarana Antarct Gelado</h2>
+            <span class="preco">R$ 10,99</span>
+            <button>Saiba mais</button>
+         </section>
+      </article>
+   </section>
+
+
     <footer>
 
     </footer>
