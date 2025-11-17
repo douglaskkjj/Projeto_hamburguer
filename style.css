@@ -6,11 +6,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Akaya';
+    src: url('fonts/AkayaKanadaka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --cor1: #0c0f3ffb;
     --cor2: #fab82aec;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -28,7 +37,7 @@ header{
 nav{
     display: flex;
     justify-content: center;
-    font-family: 'Kavoon';
+    font-family: 'Akaya';
 }
 
 ul{ 
@@ -45,7 +54,7 @@ a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
-    font-size: 1.4rem; 
+    font-size: 1.8rem; 
 }
 
 .main-menu a {
@@ -57,7 +66,14 @@ a{
 
 .main-menu a:hover {
     transform: scale(1.1); 
-    color: var(--cor2); 
+}
+
+.main-menu a img{
+    display: none;
+}
+
+.main-menu a span{
+    display: block;
 }
 
 nav img{
@@ -256,4 +272,202 @@ nav img{
     font-size: 1.5rem; 
     font-weight: bold;
     cursor: pointer;
+}
+
+footer{
+    background-color: var(--cor1);
+    color: #ffffff;;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.final{
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+footer h2{
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+@media (max-width: 1200px) {
+
+        header{
+        height: 50%;
+        
+    }
+
+    header > a{
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    nav{
+        font-size: 15px;
+        margin: 10px;
+        justify-content: end;
+    }
+
+    ul{
+        gap: 25px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  
+    article{
+        margin: 5px;
+    }
+
+    .slider {
+        width: 100vw; 
+        height: 50vw; 
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .slides {
+        height: 50vw;
+    }
+
+    .slide img {
+        width: 100%; 
+        
+        height: 50vw;
+        object-fit: cover; 
+    }
+
+
+    .manual-nav, .nav-auto {
+        width: 100vw; 
+    }
+    
+    .manual-nav {
+       
+        margin-top: calc(50vw - 40px); 
+    }
+    
+    .nav-auto {
+        margin-top: calc(50vw - 10px); 
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -33.333%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -66.666%;
+    }
+}
+
+@media (max-width: 670px){
+
+header{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1px 0;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+
+nav img{
+    display: none;
+}
+
+ul{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    gap: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.main-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 2px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.manual-nav, .nav-auto {
+        display: none;
+    }
+
+
+
+.main-menu a img{
+    display: block; 
+    width: 25px; 
+    height: 25px; 
+    object-fit: contain;
+    padding: 0;
+}
+
+.main-menu a span{
+    display: blcok;
+    font-size: 1rem;
+    text-shadow: none;
+    padding: 0;
+}
+
+
+a{
+    padding: 0px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+
+
 }
