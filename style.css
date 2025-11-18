@@ -18,7 +18,7 @@
     --cor2: #fab82aec;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    /*faz rolagem ficar suave*/
 }
 
 body{
@@ -30,13 +30,13 @@ body{
 
 header{
     background-color: var(--cor1);
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.301);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.301);   
     padding: 2px;
     margin-bottom: 30px;
 }
 nav{
-    display: flex;
-    justify-content: center;
+    display: flex;              
+    justify-content: center;        /*alinhar os links ao centro*/
     font-family: 'Akaya';
 }
 
@@ -58,14 +58,14 @@ a{
 }
 
 .main-menu a {
-    display: inline-block; 
+    display: inline-block;          /*cada link do menu vira um bloco e recebe animação*/
     text-decoration: none;
     color: #ffffff; 
     transition: transform 0.2s ease-in-out;
 }
 
 .main-menu a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);          /*Aumenta o link quando passa o mouse.*/
 }
 
 .main-menu a img{
@@ -77,23 +77,23 @@ a{
 }
 
 nav img{
-    padding-left: 44px;
+    padding-left: 44px;             /*tamanho da logo no nav*/
     width: 78px;
 }
 
 /*style do slide*/
 
-.slider{
+.slider{                              /*O container principal do carrossel*/
     margin: 0 auto;
     width: 1200px;
     height: 800px;
-    overflow: hidden;
+    overflow: hidden;               /*apenas a imagem visível aparece, esconde as outras.*/
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.288);
     border-radius: 7px;
 }
 
-.slides{
-    width: 300%;
+.slides{                               /*O container interno que segura todas as imagens*/  
+    width: 300%;                       /*tamanho triplicado pra caber 3 imagens*/
     height: 800px;
     display: flex;
 }
@@ -103,23 +103,23 @@ nav img{
 }
 
 .slide{
-    width: 33.333%;
+    width: 33.333%;                     /*cada slide ocupa 1/3 do container: 33%*/
     position: relative;
-    transition: 1.5s;
+    transition: 1.5s;                   /*transiçao suave*/
 }
 .slide img{
     width: 1200px;
     height: 800px;
 }
 
-.manual-nav{
+.manual-nav{                            /*bolinha manual para trocar slides*/
     position: absolute;
     width: 1200px;
     margin-top: -20px;
     display: flex;
     justify-content: center;
 }
-
+                                        /*bolinha manual para trocar slides*/
 .manual-btn{
     border: 2px solid white;
     padding: 5px;
@@ -128,7 +128,7 @@ nav img{
     transition: 0.5s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child){      
     margin-right: 40px;
 }
 
@@ -141,7 +141,7 @@ nav img{
 }
 
 #radio2:checked ~ .first{
-    margin-left: -33.333%;
+    margin-left: -33.333%;                 /*qnd o rádio 1, 2 ou 3 é clicado, o slide vai pra posição correta*/
 }
 
 #radio3:checked ~ .first{
@@ -156,7 +156,7 @@ nav img{
     transition: 1s;
 }
 
-.nav-auto{
+.nav-auto{                          /*botao que acende qnd muda slide*/
     position: absolute;
     width: 1200px;
     margin-top: 780px;
@@ -196,14 +196,14 @@ nav img{
     font-family: 'Kavoon', sans-serif;
 }
 
-.hamb, .mundi, .dog, .drink{
+.hamb, .mundi, .dog, .drink{        /*Contêineres de seção*/
     display: flex;
     gap: 3rem;
     padding: 20px;
     margin: 40px;
     flex-wrap: wrap; 
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start;        /*alinha no meio em cima*/
 }
 
 
@@ -211,7 +211,7 @@ nav img{
     margin-bottom: -10.28px;
 }
 
-.itens{
+.itens{                         /*estilo do card do produto*/
     background-color: #dfdfdfaf;
     width: 100%;
     max-width: 300px; 
@@ -228,7 +228,7 @@ nav img{
     object-fit: cover;
 }
 
-.itens section{
+.itens section{                         /*coloca os conteúdos internos em coluna*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -285,7 +285,7 @@ footer{
     text-align: center;
 }
 
-.final{
+.final{                         /*Logo no final*/
     max-width: 200px;
     height: auto;
     display: block;
@@ -298,7 +298,7 @@ footer h2{
     margin-bottom: 50px;
 }
 
-footer ul{
+footer ul{                      /*Ediçao dos links das redes sociais*/
     list-style: none;
     display: flex;
     gap: 30px;
@@ -307,7 +307,7 @@ footer ul{
     padding: 0;
 }
 
-footer ul li{
+footer ul li{                  /*Ediçao de cada item*/ 
     width: 50px;
     height: 50px;
     border-radius: 30px;
@@ -315,13 +315,14 @@ footer ul li{
     padding: 0;
 }
 
-footer ul li img{
+footer ul li img{               /*Ediçao das imagens das redes sociais*/
     width: 100%;
     height: 100%;
     display: block;
     object-fit: contain;
     border-radius: 7px;
 }
+
 
 @media (max-width: 1200px) {
 
@@ -352,7 +353,7 @@ footer ul li img{
     }
 
     .slider {
-        width: 100vw; 
+        width: 100vw;               /*novo tamanho do slide*/
         height: 50vw; 
         margin: 0;
         border-radius: 0;
@@ -363,14 +364,13 @@ footer ul li img{
     }
 
     .slide img {
-        width: 100%; 
-        
+        width: 100%;   
         height: 50vw;
         object-fit: cover; 
     }
 
 
-    .manual-nav, .nav-auto {
+    .manual-nav, .nav-auto {        /*novo tamanho dos botoes*/
         width: 100vw; 
     }
     
@@ -393,34 +393,35 @@ footer ul li img{
 
 @media (max-width: 670px){
 
-header{
+header{                     /*faz o header ficar fixo na parte de baixo*/
     position: fixed;
-    z-index: 1000;
+    z-index: 1000;          /*faz ficar sobre qlqr coisa*/
     bottom: 0;
     left: 0;
     right: 0;
     padding: 1px 0;
     height: 60px;
-    overflow: hidden;
+    overflow: hidden;        /*Esconde o que passar do tamanho da tela*/
     margin-bottom: 0;
 }
 
 
 nav img{
-    display: none;
+    display: none;          /*oculta a logo*/
 }
 
-ul{
+ul{                         /*ajusta a lista pra ocupar toda a largura e centralizar os itens*/
     width: 100%;
+    height: 100%;
     padding-right: 0;
     padding-left: 0;
     gap: 0;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
+
 .main-menu li{
     display: flex;
     justify-content: center;
@@ -442,12 +443,10 @@ ul{
 }
 
 .manual-nav, .nav-auto {
-        display: none;
+        display: none;          
     }
 
-
-
-.main-menu a img{
+.main-menu a img{               /*Exibe ícones nos links da nav inferior e diminui o texto*/
     display: block; 
     width: 25px; 
     height: 25px; 
@@ -468,6 +467,15 @@ a{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
 }
 
+.itens{                 /*card maiores e mais proximos*/
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+.hamb, .mundi, .dog, .drink {
+        margin: 20px 5px;
+        gap: 1.5rem;
+    }
 
 
 }

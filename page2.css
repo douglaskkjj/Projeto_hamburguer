@@ -230,6 +230,7 @@ footer ul li img{
     object-fit: contain;
     border-radius: 7px;
 }
+
 @media (max-width: 670px){
 
 header{
@@ -238,7 +239,7 @@ header{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1px 0;
+    padding: 3px 0;
     height: 60px;
     overflow: hidden;
     margin-bottom: 0;
@@ -306,6 +307,16 @@ a{
     padding: 0px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
 }
+
+.itens{
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.acai, .choco, .batata {
+        margin: 20px 5px;
+        gap: 1.5rem;
+    }
 
 
 
